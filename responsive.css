@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+    .hero-grid,
+    .gallery-preview,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 1rem;
+        right: 1rem;
+        padding: 1rem;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+        border-radius: 16px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .card-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 3rem;
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
